@@ -7,7 +7,7 @@ A set of tools for working with biological sequences, including DNA/RNA analysis
 1. Clone the repository:
 ```bash
 git clone git@github.com:a-v-kolos/Bioinf-utilities.git
-
+```
 2. Make sure you have Python 3.6 or higher installed.
 
 ## Supported operations:

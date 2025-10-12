@@ -57,3 +57,12 @@ calculate_gc_content(seq) - calculates GC content in %
 calculate_average_quality(quality_string) - calculates average read quality
 
 check(value, bounds) - checks if value is within specified bounds
+
+bio_files_processor.py
+Contains utility functions for processing bioinformatics file formats:
+
+parse_blast_output(input_file: str, output_file: str) -> None - extracts the best protein matches from BLAST results and saves them to a sorted list
+
+convert_multiline_fasta_to_oneline(input_fasta: str, output_fasta: str | None = None) -> None - converts a FASTA file with multiline sequences to a format where each sequence is contained in a single line
+
+

@@ -8,6 +8,7 @@ A set of tools for working with biological sequences, including DNA/RNA analysis
 ```bash
 git clone git@github.com:a-v-kolos/Bioinf-utilities.git
 ```
+
 2. Make sure you have Python 3.6 or higher installed.
 
 ## Supported operations:
@@ -56,3 +57,13 @@ Contains helper functions for FASTQ filtering:
 - calculate_average_quality(quality_string) - calculates average read quality
 
 - check(value, bounds) - checks if value is within specified bounds
+check(value, bounds) - checks if value is within specified bounds
+
+bio_files_processor.py
+Contains utility functions for processing bioinformatics file formats:
+
+parse_blast_output(input_file: str, output_file: str) -> None - extracts the best protein matches from BLAST results and saves them to a sorted list
+
+convert_multiline_fasta_to_oneline(input_fasta: str, output_fasta: str | None = None) -> None - converts a FASTA file with multiline sequences to a format where each sequence is contained in a single line
+
+

@@ -57,7 +57,6 @@ Contains helper functions for FASTQ filtering:
 - calculate_average_quality(quality_string) - calculates average read quality
 
 - check(value, bounds) - checks if value is within specified bounds
-check(value, bounds) - checks if value is within specified bounds
 
 bio_files_processor.py
 Contains utility functions for processing bioinformatics file formats:

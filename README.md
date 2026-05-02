@@ -69,3 +69,7 @@ python main.py filter-fastq \
   --gc-bounds 40,60 \
   --length-bounds 5,20 \
   --quality-threshold 20
+
+
+## Logging
+python main.py --log-file my.log dna-rna transcribe ATGC

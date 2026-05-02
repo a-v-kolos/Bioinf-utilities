@@ -66,3 +66,20 @@ parse_blast_output(input_file: str, output_file: str) -> None - extracts the bes
 convert_multiline_fasta_to_oneline(input_fasta: str, output_fasta: str | None = None) -> None - converts a FASTA file with multiline sequences to a format where each sequence is contained in a single line
 
 
+check(value, bounds) - checks if value is within specified bounds
+
+## CLI arguments
+python main.py dna-rna transcribe ATGC TTAA
+python main.py dna-rna is_nucleic_acid AUGC
+python main.py dna-rna reverse_complement ATGCGA
+
+python main.py filter-fastq \
+  --seq read1 ATGCATGC "IIIIIIII" \
+  --seq read2 GGGGCCCC "!!!!!!!" \
+  --gc-bounds 40,60 \
+  --length-bounds 5,20 \
+  --quality-threshold 20
+
+
+## Logging
+python main.py --log-file my.log dna-rna transcribe ATGC
